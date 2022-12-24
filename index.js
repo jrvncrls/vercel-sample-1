@@ -24,10 +24,6 @@ app.use("/api/payment", paymentRoute);
 const authRoute = require("./src/routes/authRoute");
 app.use("/api/auth", authRoute);
 
-app.use("/api/home", (req, res) => {
-  res.json({ message: "Hello" });
-});
-
 app.listen(port, () => {
   console.log(`Starting server on port ${port}`);
 });
