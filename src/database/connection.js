@@ -1,24 +1,23 @@
 const mysql = require("mysql");
 
 const dbConfig = {
-  host: "sql6.freesqldatabase.com",
-  user: "sql6583721",
-  database: "sql6583721",
-  password: "mfxPL4TVDW",
-  port: 3306,
-  multipleStatements: true,
-};
-
-const localDbConfig = {
-  connectionLimit: 10,
   host: "localhost",
-  user: "root",
-  database: "yy-budgetarian",
-  port: 3306,
+  user: "id20057486_yobabu",
+  database: "id20057486_yybudgetarian",
+  password: "~Ug9Y#qHo(BX&RY2",
   multipleStatements: true,
 };
 
-const db = mysql.createPool(localDbConfig);
+// const localDbConfig = {
+//   connectionLimit: 10,
+//   host: "localhost",
+//   user: "root",
+//   database: "yy-budgetarian",
+//   port: 3306,
+//   multipleStatements: true,
+// };
+
+const db = mysql.createPool(dbConfig);
 
 module.exports = (query) => {
   return new Promise((resolve, reject) => {
