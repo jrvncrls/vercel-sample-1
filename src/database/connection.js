@@ -4,7 +4,8 @@ const dbConfig = {
   host: "localhost",
   user: "id20057486_yobabu",
   database: "id20057486_yybudgetarian",
-  password: "~Ug9Y#qHo(BX&RY2",
+  password: "Yobabumoney0727!",
+  port: 3306,
   multipleStatements: true,
 };
 
